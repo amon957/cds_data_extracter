@@ -1,0 +1,11 @@
+pandas
+json
+streamlit_folium
+shapely
+urllib
+datetime
+geopandas
+xarray
+numpy
+cdsapi
+folium
