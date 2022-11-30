@@ -104,7 +104,7 @@ def extract_to_dataframe(aggregated_data,variable_initial,days):
     
     return(pd.DataFrame(dict_data_values))
 
-@st.cache
+
 def create_extent_geo(n,s,e,w):
     if n==0 and s==0 and e==0 and w==0:
         return None
@@ -113,7 +113,7 @@ def create_extent_geo(n,s,e,w):
         geo=Polygon(coords)
         return(gpd.GeoSeries(geo,crs='epsg:4326'))
 
-@st.cache(suppress_st_warning=True)
+
 def data_processing_module(params):
     d_from=params['date_from']
     d_to=params['date_to']
