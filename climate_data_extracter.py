@@ -16,7 +16,6 @@ import xarray as xr
 import numpy as np
 import folium
 import cdsapi
-import json
 
 #-----------------------PAGE LAYOUT SETUP--------------------------------------
 
