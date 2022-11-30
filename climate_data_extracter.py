@@ -125,7 +125,7 @@ def data_processing_module(params):
     df=extract_to_dataframe(aggregated_data,params['short_name'],dates)
     return(df)
 
-@st.cache
+
 def convert_df(df):
     return df.to_csv().encode('utf-8')
 
