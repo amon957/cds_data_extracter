@@ -8,3 +8,4 @@ xarray
 numpy
 cdsapi
 folium
+streamlit
