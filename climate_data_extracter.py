@@ -113,7 +113,7 @@ def create_extent_geo(n,s,e,w):
         geo=Polygon(coords)
         return(gpd.GeoSeries(geo,crs='epsg:4326'))
 
-@st.cache
+@st.cache(suppress_st_warning=True)
 def data_processing_module(params):
     d_from=params['date_from']
     d_to=params['date_to']
