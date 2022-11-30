@@ -44,7 +44,7 @@ def gen_dates(d_from,d_to):
 
 
 def get_data(parameters):
-    key="164866:867286b2-02f7-48c8-abf9-43435415d896"
+    key=st.secrets["key"]
     c = cdsapi.Client("https://cds.climate.copernicus.eu/api/v2",key)
     params={
         "variable": parameters['variable'],
