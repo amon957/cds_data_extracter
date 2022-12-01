@@ -216,7 +216,7 @@ with col1:
             'Projection': 'Latitude-Longitude',
             'Horizontal Coverage':'{} North, {} South, {} East, {} West'
             .format(n,s,e,w),
-            'Temporal Resolution': 'Daily',
+            'Temporal Resolution': 'Dailly',
             'Temporal Coverage':'From {} to {}'.format(date_from,date_to),
             'Aggregation':aggr,
             'Data Type':'Gridded',
