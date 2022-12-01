@@ -26,7 +26,7 @@ col1,col2=st.columns((1,2))
 #-------------------MAP CREATOR FUNCTION---------------------------------------
 
 def create_map_intance(center=[0,0],extent=None):
-    Map=folium.Map(location=center, zoom_start=0)
+    Map=folium.Map(location=center, zoom_start=2)
     if extent==None:
         pass
     else:
