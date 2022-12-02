@@ -20,7 +20,7 @@ import cdsapi
 #-----------------------PAGE LAYOUT SETUP--------------------------------------
 
 st.set_page_config(page_title='Data Extracter', page_icon=None, layout="wide")
-st.subheader('Dailly Data Extraction From Copernicus Climate Data Store')
+st.subheader('Daily Data Extraction From Copernicus Climate Data Store')
 col1,col2=st.columns((1,2))
 
 #-------------------MAP CREATOR FUNCTION---------------------------------------
@@ -165,7 +165,7 @@ with col1:
         variable=st.selectbox('Variable',variables)
         date_from=st.date_input('From',min_value=date(1959,1,1),max_value=date.today())
         date_to=st.date_input('To',min_value=date(1959,1,1),max_value=date.today())
-        aggr=st.selectbox('Dailly Aggregation Type',['---Select---','Sum','Minimum','Maximum',
+        aggr=st.selectbox('Daily Aggregation Type',['---Select---','Sum','Minimum','Maximum',
                                               'Average'])
         df_geo=create_extent_geo(n,s,e,w)
         if st.button("Extract"):
