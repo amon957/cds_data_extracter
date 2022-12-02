@@ -18,3 +18,16 @@ This program provides an interactive web application for extracting daily data f
 
 
 [Visit Application](https://amon957-cds-data-extracter-climate-data-extracter-xsmm00.streamlit.app/)
+
+## Python Libraries Used
+- streamlit : For web interface creation
+- streamlit_folium : For rendering folium map in streamlit application
+- folium : Creating and rendering map for easy identification of your area of interest
+- datetime : For reading date range
+- shapely : For Creating polygon for the extent
+- geopandas : Assigning projection to the extent polygon created with shapely
+- cdsapi : Application interface for communication with Climate Data Store, requesting data
+- urllib : For reguesting and opening netcdf file link
+- xarray : Reading and manipulating (Aggregation of data) netcdf file (Reading Multi-dimensional data from ### Climate Data Store)
+- numpy : Holding multi-dimensional data from xarray as individual variables i.e latitude, longitude & variable of interest for easy extraction into a table form
+- pandas : Organizing converted data into table form (Using dataframe) before exporting it into a csv file
