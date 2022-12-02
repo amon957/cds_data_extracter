@@ -1,5 +1,5 @@
 # Extract data from Copernicus Climate Data Store into a csv file
-This program provides an interactive web application for extracting daily data from climate data store using ## cdsapi. It enables user to enter the following filtering parameters.
+This program provides an interactive web application for extracting daily data from climate data store using cdsapi. It enables user to enter the following filtering parameters.
 - Area extent
 - Variable of interest
 - Date range
@@ -28,6 +28,6 @@ This program provides an interactive web application for extracting daily data f
 - geopandas : Assigning projection to the extent polygon created with shapely
 - cdsapi : Application interface for communication with Climate Data Store, requesting data
 - urllib : For reguesting and opening netcdf file link
-- xarray : Reading and manipulating (Aggregation of data) netcdf file (Reading Multi-dimensional data from ### Climate Data Store)
+- xarray : Reading and manipulating (Aggregation of data) netcdf file (Reading Multi-dimensional data from Climate Data Store)
 - numpy : Holding multi-dimensional data from xarray as individual variables i.e latitude, longitude & variable of interest for easy extraction into a table form
 - pandas : Organizing converted data into table form (Using dataframe) before exporting it into a csv file
