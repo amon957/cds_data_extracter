@@ -64,13 +64,13 @@ def get_data(parameters):
 
 def aggregation(data,aggr):
     if aggr=='Sum':
-        aggregated_data=data.groupby('time.day').sum()
+        aggregated_data=data.resample(time='1D').sum()
     elif aggr=='Maximum':
-        aggregated_data=data.groupby('time.day').max()
+        aggregated_data=data.resample(time='1D').max()
     elif aggr=='Minimum':
-        aggregated_data=data.groupby('time.day').min()
+        aggregated_data=data.resample(time='1D').min()
     elif aggr=='Average':
-        aggregated_data=data.groupby('time.day').mean()
+        aggregated_data=data.resample(time='1D').mean()
     return (aggregated_data)
 
 
